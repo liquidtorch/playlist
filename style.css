@@ -1,0 +1,38 @@
+.header {
+  background-color: #9B9B8D;
+  height: 5vh;
+}
+
+.footer {
+  background-color: #9B9B8D;
+  height: 5vh;
+}
+
+
+/* .body */
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+bigHeader
+
+container
+
+chooseSide
+
+#buttonChoose {
+  background-color: red;
+}
+
+trainSide
+
+footer
+
+albumList
+
+playList
