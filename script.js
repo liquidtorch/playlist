@@ -1,3 +1,35 @@
+document.getElementById('buttonChoose').onclick = function () {
+        location.href = 'playlist.html';
+    };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // // create header, footer, button side, album side, and containers for body and albums
 //
 // const header = document.createElement('header');

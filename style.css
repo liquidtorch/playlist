@@ -1,33 +1,92 @@
+.w3-container {
+  width: 100vw;
+}
+
 .header {
   background-color: #9B9B8D;
   height: 5vh;
 }
 
+.bigHeader {
+  display: flex;
+  align-items: flex-end;
+  padding: 5px;
+  background-color: #9B9B8D;
+  height: 15vh;
+}
+
+@font-face {
+  font-family: avenir
+  src: url(.fonts/AvenirNextLTPro-regular.otf);
+}
+
 .footer {
+  display: flex;
+  align-items: center;
+  padding: 5px;
   background-color: #9B9B8D;
   height: 5vh;
 }
 
+.button {
+  background-color: #353528;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+#albumRow {
+  background-color: #9B9B8D;
+  height: 10vh;
+}
+
+#albumBin {
+  background-color: #9B9B8D;
+  height: 25vh;
+}
+
+#clearSubmitButtons {
+  background-color: #9B9B8D;
+  height: 25vh;
+}
 
 /* .body */
 
 .row {
-    display: flex;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .column {
-    flex: 50%;
+  display: flex;
+  flex: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-bigHeader
+#tracks {
+  background-image: url(./resources/track.fw.png);
+  background-size: 100%;
+  object-fit: contain;
+  opacity: 0.19;
+  height: 70vh
+}
+
 
 container
 
 chooseSide
 
-#buttonChoose {
-  background-color: red;
-}
 
 trainSide
 
