@@ -3,6 +3,17 @@ const url = 'https://lit-fortress-6467.herokuapp.com/object'
 document.getElementById('buttonChoose').onclick = function () {
   location.href = 'playlist.html';
 };
+
+const app = document.getElementById('tracks');
+
+const coverart = document.createElement('img');
+
+const container = document.createElement('div');
+container.setAttribute('class', 'container');
+
+app.appendChild(coverart);
+app.appendChild(container)
+
 callAPI(processResponse)
 
 function processResponse(response) {
@@ -50,6 +61,7 @@ function getThreeAlbums(albums) {
 const albums = ['one', 'two', 'three', 'four', 'five', 'six']
 
 console.log(getThreeAlbums(albums))
+
 
 
 
