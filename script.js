@@ -7,7 +7,7 @@ callAPI(processResponse)
 
 function processResponse(response) {
   console.log(response);
-  console.log(response.results[0].title);
+  console.log(response.results[3].cover_art);
   const albums = response.results
   console.log(albums);
 }

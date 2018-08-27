@@ -94,6 +94,25 @@ h1 {
   height: 70vh
 }
 
+.scrollmenu {
+  background-color: #EEEEEE;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+#slide {
+    width: auto;
+    height: 100px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#playList {
+  border-width: thick black;
+  height: 20vh;
+  width: 70vw;
+}
 
 container
 
@@ -104,5 +123,3 @@ trainSide
 
 
 albumList
-
-playList
