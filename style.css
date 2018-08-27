@@ -5,14 +5,22 @@
 .header {
   background-color: #9B9B8D;
   height: 5vh;
+  color: white;
 }
 
 .bigHeader {
   display: flex;
   align-items: flex-end;
   padding: 5px;
+  color: white;
+  font-size: 2em;
+  text-indent: 1em;
   background-color: #9B9B8D;
   height: 15vh;
+}
+
+h1 {
+  color: #450F62;
 }
 
 @font-face {
@@ -24,6 +32,8 @@
   display: flex;
   align-items: center;
   padding: 5px;
+  color: white;
+  text-indent: 1em;
   background-color: #9B9B8D;
   height: 5vh;
 }
@@ -35,6 +45,8 @@
   color: white;
   padding: 20px;
   text-align: center;
+  width: 150px;
+  height: 50px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
@@ -90,7 +102,6 @@ chooseSide
 
 trainSide
 
-footer
 
 albumList
 

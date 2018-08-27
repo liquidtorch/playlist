@@ -1,11 +1,55 @@
+const url = 'https://lit-fortress-6467.herokuapp.com/object'
+
 document.getElementById('buttonChoose').onclick = function () {
-        location.href = 'playlist.html';
-    };
+  location.href = 'playlist.html';
+};
+callAPI(processResponse)
 
+function processResponse(response) {
+  console.log(response);
+  console.log(response.results[0].title);
+  const albums = response.results
+  console.log(albums);
+}
 
+// help from Cameron with this request:
+function callAPI(whenDone) {
+  let request = new XMLHttpRequest();
+  request.addEventListener("load", function(ev){
+    const response = ev.target.response;
+    const obj = JSON.parse(response);
 
+    whenDone(obj);
+  });
+  request.open("GET", url);
+  request.send();
+}
 
+function getThreeAlbums(albums) {
+  let randomIndexes = [];
+  let randomAlbums = [];
 
+  const randIndex = (arr) => Math.floor(Math.random() * arr);
+
+  for(let i = 0; i < 3; i++) {
+    let index;
+    let includesIndex = true;
+    while (includesIndex) {
+      index = randIndex(albums.length);
+      includesIndex = randomIndexes.includes(index);
+      if (!includesIndex) {
+        randomIndexes.push(index);
+        randomAlbums.push(albums[index]);
+      }
+    }
+  }
+
+  return randomAlbums
+
+}
+const albums = ['one', 'two', 'three', 'four', 'five', 'six']
+
+console.log(getThreeAlbums(albums))
 
 
 
